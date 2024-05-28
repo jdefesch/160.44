@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Change a point color</title>
+    </head>
+
+    <body onload="main()">
+        <div style="width: fit-content;float: right;">
+            <canvas id="webgl" width="500" height="500"> Please use a browser that supports "canvas" </canvas>
+            <br />
+
+            <p id="performance"></p>
+
+            <button id="normal-on">Normal on</button>
+            <button id="normal-off">Normal off</button>
+
+            <br></br>
+
+            <button id="light-ani">Toggle Light animation</button>
+            <button id="light-toggle">Toggle Light</button>
+            <br></br>
+
+            <label>Light X:</label>
+            <input type="range" id="lightX" min="-250" max="250" value="0" />
+            <label>Light Y:</label>
+            <input type="range" id="lightY" min="-250" max="250" value="100" />
+            <label>Light Z:</label>
+            <input type="range" id="lightZ" min="-250" max="250" value="-200" />
+            <br />
+
+            <label>Camera Angle:</label>
+            <input type="range" id="camera-angle" min="0" max="90" value="0" />
+            <br />
+
+            <label>Yellow:</label>
+            <input type="range" id="yellow-angle" min="0" max="90" value="0" />
+            <br />
+            <label>Blue:</label>
+            <input type="range" id="blue-angle" min="0" max="90" value="0" />
+            <br />
+
+            <button id="enable-animation">On</button>
+            <button id="disable-animation">Off</button>
+        </div>
+
+        <script src="./lib/webgl-utils.js"></script>
+        <script src="./lib/webgl-debug.js"></script>
+        <script src="./lib/cuon-utils.js"></script>
+        <script src="./lib/cuon-matrix.js"></script>
+        <script src="Triangle.js"></script>
+        <script src="Cube.js"></script>
+        <script src="Camera.js"></script>
+        <script src="World.js"></script>
+        <script src="Sphere.js"></script>
+    </body>
+</html>
